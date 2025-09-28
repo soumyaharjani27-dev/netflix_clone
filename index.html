@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix India - Watch TV Shows Online</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            overflow-x: hidden;
+            margin: 0;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            width: 100%;
+            position: relative; 
+        }
+
+        .navbar img {
+            width: 150px;
+        }
+
+        .nav-buttons {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .navbar button {
+            background-color: red;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 8px 16px;
+        }
+
+        .lang-select {
+            border: 1px solid #555;
+            color: white;
+            background-color: black;
+            padding: 6px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Hero section */
+        .hero {
+            height: 100vh;
+            background: url("./images/hero-bg.png") center center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+        }
+
+        .email-form {
+            display: flex;
+            justify-content: center;
+            max-width: 600px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .email-form input {
+            flex: 1;
+            padding: 15px 20px;
+            border-radius: 20px;
+            border: 1px solid #555;
+            font-size: 1rem;
+            color: white;
+            background-color: black;
+            outline: none;
+        }
+
+        .email-form button {
+            background-color: red;
+            border: none;
+            border-radius: 20px;
+            padding: 15px 20px;
+            font-size: 1rem;
+            color: white;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        /* Trending section */
+        .trending {
+            padding: 20px 5%;
+        }
+
+        .trending h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .trending-list {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+            padding-bottom: 10px;
+            scroll-behavior: smooth;
+            
+        }
+
+        .trending-item {
+            min-width: 180px;
+            
+            background-color: #333;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 0.9rem;
+            scroll-snap-align: start;
+            cursor: pointer;
+            
+        }
+
+        .trending-item img {
+            width: 180px;
+            height: 270px;
+            object-fit: cover;
+            border-radius: 5px;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+  <h1 style="display: flex;text-align: center;justify-content: center; color: rgb(199, 35, 35); font-family: Arial, sans-serif;">A Netflix Originals<br>ft. Soumya Harjani</h1>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo">
+        <div class="nav-buttons">
+            <select class="lang-select">
+                <option>English</option>
+                <option>हिन्दी</option>
+            </select>
+            <button class="signin-btn">Sign In</button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Unlimited movies, TV shows and more</h1>
+            <h2>Starts at ₹149. Cancel at any time.</h2>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <div class="email-form">
+                <input type="email" placeholder="Email address">
+                <button>Get Started &gt;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Section -->
+    <section>
+        <div class="trending">
+            <h2>Trending Now</h2>
+            <div class="trending-list">
+                <div class="trending-item">
+                    <img src="https://m.media-amazon.com/images/M/MV5BOGJlYjliMGMtYTAxOC00YWU4LWE1NTktM2NhMDdmZTcxOTk2XkEyXkFqcGc@._V1_.jpg" alt="Movie 1">
+                    The Ba***ds of Bollywood
+                </div>
+                <div class="trending-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfjEK17XFlbdMv_xGsM5zBkDRVwIFZpUGhJw&s" alt="Movie 2">
+                    Mahavatar Narsimha
+                </div>
+                <div class="trending-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8kNt5z68FNPQfg3wQszCQPSbGq5SuxCnQsw&s" alt="Movie 3">
+                    Saiyaara
+                </div>
+                <div class="trending-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/0/09/HIT_-_The_Third_Case.jpg" alt="Movie 4">
+                    HIT
+                </div>
+                <div class="trending-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHDHsfLAMuUX0Cl58x5WWUzcAsUvTgaiwO0w&s" alt="Movie 5">
+                    Wednesday
+                </div>
+                <div class="trending-item">
+                    <img src="https://m.media-amazon.com/images/M/MV5BYTkxNTNhYjktMTcxNy00OTA5LThlY2ItZjM3YTFjYmQ1ZmYzXkEyXkFqcGc@._V1_.jpg" alt="Movie 6">
+                    The Great Indian Kapil Show
+                </div>
+                <div class="trending-item">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMDFlZGJlYzctNGIzMi00YjFiLWJmMzItMmI3Njk4ODNkNjhlXkEyXkFqcGc@._V1_.jpg" alt="Movie 6">
+                    Raid 2
+                </div>
+                <div class="trending-item">
+                    <img src="https://m.media-amazon.com/images/M/MV5BOThmMTZjMTUtMTE5OC00OTA0LWIzNjktZTA5NTBmZDc4Mjk0XkEyXkFqcGc@._V1_.jpg" alt="Movie 7">
+                    Stolen
+                </div>
+                <div class="trending-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHrCHDGN9puqMjRVwv7p58yzGLiXv_NfDFyQ&s" alt="Movie 8">
+                    Jolly LLB-3
+                </div>
+                <div class="trending-item">
+                    <img src="https://m.media-amazon.com/images/M/MV5BYTRkNDdlZDItMWMzYi00ZDEzLTgyNDQtNGZmM2UxZTY5YmFjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Movie 9">
+                    Bagghi-4
+                </div>
+                <div class="trending-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/6/66/Lakshya.jpg" alt="Movie 10">
+                    Lakshya
+                </div>
+                <div class="trending-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA1ceiSdE3H0jpFnZQgfN9lNLAyYAIBtWEZw&s" alt="Movie 11">
+                    The Empty Man
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
